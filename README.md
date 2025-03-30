@@ -22,7 +22,9 @@ To generate the battle, you have two primary options:
 
 	Sweet Scent has the same effect as Honey, but due to the extra animation of the Pokemon using a field move, has a delay of about 5.4 seconds. Unlike Generation 3, the field move animation's duration does not depend on the length of the Pokemon's cry. If you use Sweet Scent, set your timer's "target seconds" to 5 seconds before your actual target.
 
-Stand in the grass and press A on Honey's "use" or "Sweet Scent" respectively as the timer's second set of beeps go off, and start the battle. (Technically, Headbutt, a trainer battle, or a static encounter would also all work!)
+Stand in the grass and press A on Honey's "use" or "Sweet Scent" respectively as the timer's second set of beeps go off, and start the battle. 
+
+If you seek to manipulate something specific, such as a Headbutt encounter, a trainer battle, or a static encounter, you will need to determine the delay in seconds between the final A press and the battle being seeded and appropriately set your timer's target seconds.
 
 Also important: black-screen pauses between menus will briefly cause the game to stop rendering new frames, and this will stop the delay from counting up. This can simply be calibrated for, but you *must* do the exact same menuing for each calibration attempt and attempt to hit your target. For example, your menuing steps may be continuing, closing the journal, then opening the item menu and using Honey. You must do this exact procedure without deviation for each attempt. Do not detour to open the party menu, or re-save the game such that the journal will no longer show up, etc.
 
@@ -30,7 +32,7 @@ To search for what seed you hit, start with +/- 1 second if you know you have se
 
 In the battle, your Metronome user *must* go first. This means the opponent cannot have any priority move; Protect or Bide etc. included. Doing this in areas with low-level Pokemon (without Quick Attack/Bide) like Lake Verity or Kanto Route 2 is recommended. Click Metronome on turn 1 and enter the move it rolls into the tool. It will then output possible battle seeds that you hit.
 
-Do 3-4 attempts at calibration and check the possible seeds you hit for some that are closely clustered together. If needed, adjust the calibrated delay of your timer by a small amount (+/- 10 or so) and then look for a corrspendingly early or late result in your possible list of hit seeds.
+Do 3-4 attempts at calibration and check the possible seeds you hit for some that are closely clustered together. If needed, adjust the calibrated delay of your timer by a small amount (+/- 10 or so) and then look for a correspondingly early or late result in your possible list of hit seeds.
 
 When you have an idea of what delay you are hitting, enter this in your timer's "delay hit" field and update the timer, then do another round or 3-4 Metronome attempts and make sure you are getting results that are close to your calibration target.
 
