@@ -3,6 +3,8 @@ This tool will let you calibrate for battle seed RNG manipulation in Pokemon PtH
 
 In PtHGSS, battles get their own random seed which is determined as soon as the battle begins. This is the same process as hitting a target initial seed, except instead of clicking 'A' on the continue screen at a specific time, you click 'A' on some way to start a battle.
 
+Hitting battle seeds is subject to the same parity quirk as hitting initial seeds. That is, you will only ever hit odd seeds or even seeds with a given setup. To switch between the two, you can do any of the usual methods: insert a Pokemon GBA game into slot 2, change the year, or click 'new game' on the continue screen followed by backing out and clicking continue.
+
 A tool to obtain target battle seeds to manipulate Pickup can be found here: https://github.com/Real96/PtHGSSPickupItemsRNGTool
 
 The calibration process uses Metronome, which can roll one of 411 different moves at random. To use this reliably, obtain any Pokemon with Metronome, and then delete the other moves it knows so it only has Metronome. This is required because Metronome cannot call any of the other moves the user knows. To obtain the Metronome user, in Platinum you can catch a Togepi on Route 230 with the PokeRadar, and in HeartGold/SoulSilver you can use the Togepi you obtain from the egg or catch a Clefairy in Mt. Moon.
