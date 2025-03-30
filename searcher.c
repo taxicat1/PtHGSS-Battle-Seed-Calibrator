@@ -25,32 +25,30 @@ int searchBattleSeed(targetTime target_time, int target_move, int seconds_pm, in
 	
 	int printed_headers = 0;
 	for (int i = 0; i <= seconds_pm*2; i++) {
-		if (targetTimeInBounds(&target_time)) {
-			for (int delay = min_delay; delay <= max_delay; delay++) {
-				target_time.delay = delay;
-				
-				uint32_t seed = targetTimeToSeed(&target_time);
-				int move = metronomeMoveFromSeed(seed);
-				
-				if (move == target_move) {
-					if (!printed_headers) {
-						printf(
-							"%-8s" COL_GAP "%-10s" COL_GAP "%-8s" COL_GAP "%-5s" COL_GAP "%s\n",
-							"Seed", "Date", "Time", "Delay", "Metronome"
-						);
-						
-						printed_headers = 1;
-					}
-					
+		for (int delay = min_delay; delay <= max_delay; delay++) {
+			target_time.delay = delay;
+			
+			uint32_t seed = targetTimeToSeed(&target_time);
+			int move = metronomeMoveFromSeed(seed);
+			
+			if (move == target_move) {
+				if (!printed_headers) {
 					printf(
-						"%08x" COL_GAP "%04i-%02i-%02i" COL_GAP "%02i:%02i:%02i" COL_GAP "%-5i" COL_GAP "%s\n",
-						seed,
-						target_time.year+2000, target_time.month, target_time.day,
-						target_time.hour, target_time.minute, target_time.second,
-						target_time.delay,
-						moveNames[move]
+						"%-8s" COL_GAP "%-10s" COL_GAP "%-8s" COL_GAP "%-5s" COL_GAP "%s\n",
+						"Seed", "Date", "Time", "Delay", "Metronome"
 					);
+					
+					printed_headers = 1;
 				}
+				
+				printf(
+					"%08x" COL_GAP "%04i-%02i-%02i" COL_GAP "%02i:%02i:%02i" COL_GAP "%-5i" COL_GAP "%s\n",
+					seed,
+					target_time.year+2000, target_time.month, target_time.day,
+					target_time.hour, target_time.minute, target_time.second,
+					target_time.delay,
+					moveNames[move]
+				);
 			}
 		}
 		

@@ -16,14 +16,6 @@ targetTime targetTimeMake(int year, int month, int day, int hour, int minute, in
 	return ret;
 }
 
-int targetTimeInBounds(const targetTime* target) {
-	if (target->year < 0 || target->year > 99) {
-		return 0;
-	}
-	
-	return 1;
-}
-
 void targetTimeSubtractSecond(targetTime* target) {
 	target->second--;
 	if (target->second == -1) {
@@ -40,6 +32,9 @@ void targetTimeSubtractSecond(targetTime* target) {
 					if (target->month == 0) {
 						target->month = 12;
 						target->year--;
+						if (target->year == -1) {
+							target->year = 99;
+						}
 					}
 					target->day = calendarMonthLengths[target->month];
 					if (target->month == 2 && calendarIsLeapYear(target->year)) {
@@ -72,6 +67,9 @@ void targetTimeAddSecond(targetTime* target) {
 					if (target->month == 13) {
 						target->month = 1;
 						target->year++;
+						if (target->year == 100) {
+							target->year = 0;
+						}
 					}
 				}
 			}
