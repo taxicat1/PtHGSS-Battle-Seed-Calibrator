@@ -1,5 +1,5 @@
 # Intro
-This tool will let you calibrate for battle seed RNG manipulation in Pokemon PtHGSS retail. Battle seed manipulation can be used for catching Pokemon on the first ball, contracting Pokerus, manipulating Pickup items, etc. This does not work in Diamond and Pearl; they use an entirely different system of battle RNG.
+This tool will let you calibrate for battle seed RNG manipulation in Pokemon PtHGSS retail. Battle seed manipulation can be used for catching Pokemon on the first ball, manipulating Pickup items, etc. This does not work in Diamond and Pearl; they use an entirely different system of battle RNG.
 
 In PtHGSS, battles get their own random seed which is determined as soon as the battle begins. This is the same process as hitting a target initial seed, except instead of clicking 'A' on the continue screen at a specific time, you click 'A' on some way to start a battle.
 
