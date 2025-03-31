@@ -15,10 +15,6 @@ int searchBattleSeed(targetTime target_time, int target_move, int seconds_pm, in
 		min_delay = 0;
 	}
 	
-	if (max_delay > 65535) {
-		max_delay = 65535;
-	}
-	
 	for (int i = 0; i < seconds_pm; i++) {
 		targetTimeSubtractSecond(&target_time);
 	}

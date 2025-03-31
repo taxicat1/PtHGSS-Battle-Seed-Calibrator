@@ -1,7 +1,7 @@
 # Intro
 This tool will let you calibrate for battle seed RNG manipulation in Pokemon PtHGSS retail. Battle seed manipulation can be used for catching Pokemon on the first ball, manipulating Pickup items, etc. This does not work in Diamond and Pearl; they use an entirely different system of battle RNG.
 
-In PtHGSS, battles get their own random seed which is determined as soon as the battle begins. This is the same process as hitting a target initial seed, except instead of clicking 'A' on the continue screen at a specific time, you click 'A' on some way to start a battle.
+In PtHGSS, battles get their own random seed which is determined as soon as the battle begins. The battle seed determines all random events for that battle. Hitting a target battle seed is the same process as hitting a target initial seed, except instead of clicking 'A' on the continue screen at a specific time, you click 'A' on some way to start a battle.
 
 Hitting battle seeds is subject to the same parity quirk as hitting initial seeds. That is, you will only ever hit odd seeds or even seeds with a given setup. To switch between the two, you can do any of the usual methods: insert a Pokemon GBA game into slot 2, change the year, or click 'new game' on the continue screen followed by backing out and clicking continue.
 
@@ -39,5 +39,5 @@ When you have an idea of what delay you are hitting, enter this in your timer's 
 ## Compiling
 
 ```
-gcc main.c calendar_util.c  input_tool.c metronome.c move_list.c searcher.c target_time.c -o PtHGSS-Battle-Seed-Calibrator.exe -Ofast
+gcc main.c calendar_util.c input_tool.c metronome.c move_list.c searcher.c target_time.c -o PtHGSS-Battle-Seed-Calibrator.exe -Ofast
 ```
