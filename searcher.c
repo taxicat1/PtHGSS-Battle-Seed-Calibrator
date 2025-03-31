@@ -54,4 +54,6 @@ int searchBattleSeed(targetTime target_time, int target_move, int seconds_pm, in
 	if (!printed_headers) {
 		printf("No result found!\n");
 	}
+	
+	return printed_headers;
 }
